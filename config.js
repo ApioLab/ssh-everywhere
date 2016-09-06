@@ -1,5 +1,6 @@
 module.exports = {
-	telegramToken: "",
-	username: "admin",
-	password: "admin",
+	telegramToken: "270262439:AAElNQDF0_0hWAmIIOiYudVzP4SOp2JHZkQ",
+	login: {
+		admin : "admin"
+	}
 };
