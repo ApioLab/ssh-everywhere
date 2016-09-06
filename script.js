@@ -27,6 +27,9 @@ app.use(cloudcmd({
     socket: socket,     /* used by Config, Edit (optional) and Console (required)   */
     config: {           /* config data (optional)                                   */
         prefix: PREFIX, /* base URL or function which returns base URL (optional)   */
+        "auth"              : true,    /* enable http authentication               */
+        "username"          : "admin",   /* username for authentication              */
+        "password"          : config.login.admin   /* password hash in sha-1 for authentication*/
     }
 }));
 
