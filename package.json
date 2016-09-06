@@ -3,27 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "author": "Alessandro Chelli alessndrochelli@gmail.com",
-  "contributors": [{
-}],
+  "contributors": [
+    {}
+  ],
   "bin": {
-  "module-name": "./bin/module-name"
-},
-  "scripts": {
+    "module-name": "./bin/module-name"
   },
-
+  "scripts": {},
   "repository": {
-  "type": "git",
-  "url": ""
-},
+    "type": "git",
+    "url": ""
+  },
   "bugs": {
-  "url": ""
-},
+    "url": ""
+  },
   "keywords": [
-  "nodejitsu",
-  "iot",
-  "ssh"
-],
+    "nodejitsu",
+    "iot",
+    "ssh"
+  ],
   "dependencies": {
-
+    "express-file-manager": "^1.0.4",
+    "tty.js": "^0.2.15"
   }
 }
