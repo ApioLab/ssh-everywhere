@@ -54,7 +54,7 @@ var app = tty.createServer({
   users: {
     "admin" : config.login.admin
   },
-  port: 3000
+  port: 3002
 });
 
 
@@ -65,7 +65,7 @@ app.get('/foo', function(req, res, next) {
 app.listen();
 
 var tunnelSSH = function(){
-	var tunnelSSH = localtunnel(3000, function(err, tunnel) {
+	var tunnelSSH = localtunnel(3002, function(err, tunnel) {
 	if (err){
 
 	} else {
