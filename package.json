@@ -1,0 +1,29 @@
+{
+  "name": "SSH-EVERYWHERE",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Alessandro Chelli alessndrochelli@gmail.com",
+  "contributors": [{
+}],
+  "bin": {
+  "module-name": "./bin/module-name"
+},
+  "scripts": {
+  },
+
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "bugs": {
+  "url": ""
+},
+  "keywords": [
+  "nodejitsu",
+  "iot",
+  "ssh"
+],
+  "dependencies": {
+
+  }
+}
