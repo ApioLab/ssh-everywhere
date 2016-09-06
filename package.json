@@ -9,9 +9,7 @@
   "bin": {
     "module-name": "./bin/module-name"
   },
-  "scripts": {
-    "preinstall": "npm install -g cloudcmd" 
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": ""
@@ -25,6 +23,7 @@
     "ssh"
   ],
   "dependencies": {
+    "cloudcmd": "^5.6.1",
     "express-file-manager": "^1.0.4",
     "localtunnel": "^1.8.1",
     "node-telegram-bot-api": "^0.23.3",

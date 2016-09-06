@@ -7,17 +7,42 @@ var urlSSH ="";
 var urlFileManager="";
 var tunnelFlag = false;
 
+var http        = require('http'),
+    cloudcmd    = require('cloudcmd'),
+    express     = require('express'),
+    io          = require('socket.io'),
+    app         = express(),
+
+    PORT        = 3001,
+    PREFIX      = '/cloudcmd',
+    server,
+    socket;
+
+server = http.createServer(app);
+socket = io.listen(server, {
+    path: PREFIX + '/socket.io'
+});
+
+app.use(cloudcmd({
+    socket: socket,     /* used by Config, Edit (optional) and Console (required)   */
+    config: {           /* config data (optional)                                   */
+        prefix: PREFIX, /* base URL or function which returns base URL (optional)   */
+    }
+}));
+
+server.listen(PORT);
+
 var chatIdAdmin = "19179822"
 
-var exec = require('child_process').exec;
+//var exec = require('child_process').exec;
 
-exec("cloudcmd --port 3001", function (error, stdout, stderr) {
+/*exec("cloudcmd --port 3001", function (error, stdout, stderr) {
     if (error) {
         console.log("exec error: " + error);
     } else {
         console.log("FileManager server corretly start");
     }
-});
+});*/
 
 var tty = require('tty.js');
 
